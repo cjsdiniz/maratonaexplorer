@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -38,7 +39,6 @@ button {
 
 input {
   margin-bottom: 20px;
-  max-width: 360px;
 }
 
 button {
@@ -51,4 +51,15 @@ button {
 button:hover {
   filter: brightness(1.2);
   cursor: pointer;
+}
+
+#txtResposta {
+  margin-top: 30px;
+  transition: opacity 1s;
+}
+#txtResposta div {
+  font-size: 16px;
+  font-weight: normal;
+  opacity: 0.9;
+  margin-bottom: 10px;
 }
