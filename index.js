@@ -40,10 +40,11 @@ botaoPergunta.addEventListener("click", function () {
   const totalResp = respostas.length;
   const numAleat = Math.floor(Math.random() * totalResp);
 
-  resposta.innerHTML = pergunta.value + "<br/>" + respostas[numAleat];
+  resposta.innerHTML = "<div>" + pergunta.value + "<div>" + respostas[numAleat];
 
   pergunta.value = "";
 
+  // Esconder a resposta depois de 3 segundos
   setTimeout(function () {
     resposta.style.opacity = 0;
     botaoPergunta.removeAttribute("disabled");
